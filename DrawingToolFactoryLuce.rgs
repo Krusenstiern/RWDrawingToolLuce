@@ -1,0 +1,25 @@
+HKCR
+{
+	RealWorld.DrawingToolFactoryLuce.1 = s 'DrawingToolFactoryLuce Class'
+	{
+		CLSID = s '{96C571DB-E78A-487B-A574-C2E833FFCE8F}'
+	}
+	RealWorld.DrawingToolFactoryLuce = s 'DrawingToolFactoryLuce Class'
+	{
+		CLSID = s '{96C571DB-E78A-487B-A574-C2E833FFCE8F}'
+		CurVer = s 'RealWorld.DrawingToolFactoryLuce.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {96C571DB-E78A-487B-A574-C2E833FFCE8F} = s 'DrawingToolFactoryLuce Class'
+		{
+			ProgID = s 'RealWorld.DrawingToolFactoryLuce.1'
+			VersionIndependentProgID = s 'RealWorld.DrawingToolFactoryLuce'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{4791E63D-359A-4D7D-BCDF-22AA198E51C7}'
+		}
+	}
+}

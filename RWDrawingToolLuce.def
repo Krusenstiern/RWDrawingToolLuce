@@ -1,0 +1,11 @@
+; RWDrawingToolLuce.def : Declares the module parameters.
+
+LIBRARY      "RWDrawingToolLuce.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE
+	DllEnumClasses		PRIVATE

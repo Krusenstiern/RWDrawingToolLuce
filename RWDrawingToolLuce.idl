@@ -1,0 +1,27 @@
+// RWDrawingToolLuce.idl : IDL source for RWDrawingToolLuce
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (RWDrawingToolLuce.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "RWDrawing.idl";
+
+[
+	uuid(4791E63D-359A-4D7D-BCDF-22AA198E51C7),
+	version(1.0),
+	helpstring("RWDrawingToolLuce 1.0 Type Library")
+]
+library RWDrawingToolLuceLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(96C571DB-E78A-487B-A574-C2E833FFCE8F),
+		helpstring("DrawingToolFactoryLuce Class")
+	]
+	coclass DrawingToolFactoryLuce
+	{
+		[default] interface IRasterImageEditToolsFactory;
+	};
+};
